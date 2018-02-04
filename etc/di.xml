@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	<type name="Magento\Cron\Observer\ProcessCronQueueObserver">
+		<plugin disabled="false" name="FixOldRunningSchedulesPlugin" sortOrder="10" type="Alekseon\CleanRunningJobs\Plugin\Magento\Cron\Observer\FixOldRunningSchedulesPlugin"/>
+	</type>
+</config>
