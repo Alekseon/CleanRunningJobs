@@ -65,7 +65,7 @@ class FixOldRunningSchedulesPlugin
             \Magento\Cron\Model\Schedule::STATUS_RUNNING
         );
 
-        $runningTimeLimit = $this->dateTime->gmtTimestamp() - $runningLifetimeInMinutes * ProcessCronQueueObserverPlugin::SECONDS_IN_MINUTE;
+        $runningTimeLimit = $this->dateTime->gmtTimestamp() - $runningLifetimeInMinutes * ProcessCronQueueObserver::SECONDS_IN_MINUTE;
         foreach($runningSchedules as $schedule) {
             if (strtotime($schedule->getExecutedAt()) < $runningTimeLimit) {
                 $schedule->setMessages(__('Schedule not finished after %1 minutes.', $runningLifetimeInMinutes));
