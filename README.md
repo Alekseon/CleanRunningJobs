@@ -10,3 +10,11 @@ This extension fix this issue by marking "running" cronjobs as error if they are
 
 More informations you will find on our blog: https://alekseon.com/en/blog/post/magento-2-slow-and-cpu-usage-gets-high-this-might-be-the-reason/
 
+
+
+
+### Installation
+* From your CLI run: ```composer require alekseon/module-cleanrunningjobs```
+* Flush your cache.
+* Upgrade database: ```bin/magento setup:upgrade```
+
