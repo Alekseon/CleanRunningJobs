@@ -4,7 +4,7 @@ In case your Magento 2 app is closed/shutdown/explode when there is running cron
 
 This might be the reason why your Magento 2 will create more and more jobs in cron_schedule table and that will result that your Magento 2 will use 100% of CPU after few weeks.
 
-This extension fix this issue by marking "running" cronjobs as error if they are older than 3 days.
+This extension fix this issue by marking "running" cronjobs as error if they are older than 3 hours.
 
 
 
